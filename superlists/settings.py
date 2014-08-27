@@ -20,11 +20,12 @@ BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 SECRET_KEY = '$xpu341d5va$lgq!#6d6@$y^plyga3a@0bgu9lme&@&*v8cd59'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+# Needed when DEBUG = False
+ALLOWED_HOSTS = ['test.devetti.com']
 
 
 # Application definition
